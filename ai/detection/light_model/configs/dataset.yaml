@@ -1,0 +1,25 @@
+# Dataset configuration for YOLOv8 (YOLO format)
+# Place this file at: ai/detection/light_model/configs/dataset.yaml
+
+# -------------------------------------------------------
+# Dataset root — update this path to your dataset location
+# Expected structure:
+#   dataset/
+#     images/
+#       train/   *.jpg / *.png
+#       val/     *.jpg / *.png
+#     labels/
+#       train/   *.txt  (YOLO format: class x_center y_center w h)
+#       val/     *.txt
+# -------------------------------------------------------
+path: path/to/your/dataset
+
+train: images/train
+val: images/val
+
+# Number of classes
+nc: 1
+
+# Class names — update to match your dataset
+names:
+  0: object
